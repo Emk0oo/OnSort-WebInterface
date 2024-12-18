@@ -14,6 +14,5 @@ export class NavbarComponent {
 
   toggleMenuBurger() {
     this.isMenuBurgerOpen = !this.isMenuBurgerOpen;
-    console.log('Menu open:', this.isMenuBurgerOpen);
   }
 }
