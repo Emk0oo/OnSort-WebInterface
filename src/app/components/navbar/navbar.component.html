@@ -1,5 +1,5 @@
-<nav class="w-full border-b-2 border-gray-200 bg-gray-100 p-4">
-  <div class="flex justify-between">
+<nav class="w-full border-b-2 border-gray-200 bg-gray-100 p-4 md:px-32 md:py-6">
+  <div class="flex justify-between items-center">
     <p>Navbar</p>
     <!-- Burger Button -->
 
@@ -17,6 +17,7 @@
       [attr.aria-expanded]="isMenuBurgerOpen"
     >
       <svg
+        *ngIf="!isMenuBurgerOpen"
         xmlns="http://www.w3.org/2000/svg"
         width="32"
         height="32"
@@ -29,6 +30,23 @@
           stroke-linejoin="round"
           stroke-width="2"
           d="M3 6h18M3 12h18M3 18h18"
+        />
+      </svg>
+
+      <svg
+        *ngIf="isMenuBurgerOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m7 7l10 10M7 17L17 7"
         />
       </svg>
     </button>
