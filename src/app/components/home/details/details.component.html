@@ -10,7 +10,7 @@
     <div
       *ngFor="let detail of details"
       id="a-detail"
-      class="flex flex-col md:flex-row md:flex-1 items-center md:gap-4"
+      class="flex flex-col md:flex-row md:flex-1 items-center gap-6 pb-16 md:gap-4"
     >
       <div id="imageDetail" class="flex-shrink-0">
         <img
@@ -19,8 +19,8 @@
           class="rounded-lg md:w-[100px] md:h-[100px]"
         />
       </div>
-      <div class="md:flex-grow">
-        <h2 class="text-bold">{{ detail.title }}</h2>
+      <div class="flex flex-col items-center md:flex-grow gap-2">
+        <h2 class="font-bold">{{ detail.title }}</h2>
         <p>{{ detail.description }}</p>
       </div>
     </div>
