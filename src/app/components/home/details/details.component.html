@@ -1,0 +1,28 @@
+<div
+  id="details"
+  class="flex flex-col md:flex-row px-6 gap-y-20 md:gap-y-8 pb-24 md:px-32 md:items-center"
+>
+  <div id="imageDetail" class="hidden md:flex md:flex-1">
+    <img src="https://placehold.co/635x500" alt="Image" class="rounded-3xl md:w-[635px] md:h-[500px]" />
+  </div>
+
+  <div id="texte-details" class="flex flex-col md:gap-8 md:flex-1">
+    <div
+      *ngFor="let detail of details"
+      id="a-detail"
+      class="flex flex-col md:flex-row md:flex-1 items-center md:gap-4"
+    >
+      <div id="imageDetail" class="flex-shrink-0">
+        <img
+          [src]="detail.image"
+          alt="Image"
+          class="rounded-lg md:w-[100px] md:h-[100px]"
+        />
+      </div>
+      <div class="md:flex-grow">
+        <h2 class="text-bold">{{ detail.title }}</h2>
+        <p>{{ detail.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
