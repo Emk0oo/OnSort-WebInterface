@@ -1,4 +1,4 @@
-<div id="newsletter" class="w-full max-w-2xl mx-auto gap-8 py-24 px-6 md:mx-auto md:flex md:flex-col md:items-center md:px-32 md:max-w-full">
+<div id="faq" class="w-full max-w-2xl mx-auto gap-8 py-24 px-6 md:mx-auto md:flex md:flex-col md:items-center md:px-32 md:max-w-full">
   <h2 class="text-[32px] font-bold text-center mb-8 leading-tight sm:leading-normal break-words">
     Questions fréquentes
   </h2>
@@ -18,7 +18,7 @@
       </span>
     </button>
     <div *ngIf="faq.isOpen" class="px-6 pb-4 text-gray-600 text-[20px]">
-      <div [innerHTML]="faq.content"></div>
+      <div [innerHTML]="faq.content" class="transition-all duration-300 ease-in-out"></div>
     </div>
   </div>
 </div>
