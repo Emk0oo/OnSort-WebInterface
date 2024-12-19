@@ -6,11 +6,12 @@ import { PartenairesComponent } from '../../components/home/partenaires/partenai
 import { DownloadComponent } from '../../components/home/download/download.component';
 import { NewsletterComponent} from '../../components/home/newsletter/newsletter.component';
 import { FaqComponent } from '../../components/home/faq/faq.component';
+import { ContactComponent } from '../../components/home/contact/contact.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
-  imports: [PresentationComponent, DetailsComponent, PartenairesComponent, DownloadComponent, FaqComponent, NewsletterComponent, FooterComponent, CommonModule],
+  imports: [PresentationComponent, DetailsComponent, PartenairesComponent, DownloadComponent, FaqComponent, NewsletterComponent, ContactComponent, FooterComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
