@@ -8,6 +8,7 @@ export default {
       },
       backgroundImage: {
         "presentation": "url('../public/background_section1.png')",
+        "grille": "url('../public/background_carré.png')",
       },
     },
   },
