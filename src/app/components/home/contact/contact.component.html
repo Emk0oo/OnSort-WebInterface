@@ -1,12 +1,56 @@
-<div id="contact" class="flex flex-col px-6 py-24 gap-8 items-center">
-    <h2 class="text-[32px] font-bold">Formulaire partenaire</h2>
-    <p class="text-[20px] text-center">Ce formulaire est essentiel au traitement de votre demande de partenariat et nous permettra de vous recontacter de manière efficace.</p>
+<div id="contact" class="flex flex-col px-6 py-24 gap-6 items-center">
+  <h2 class="text-[32px] font-bold">Formulaire partenaire</h2>
+  <p class="text-[20px] text-center">
+    Ce formulaire est essentiel au traitement de votre demande de partenariat et
+    nous permettra de vous recontacter de manière efficace.
+  </p>
 
-    <input class="text-[20px] py-2 px-4 mt-4 border-3 rounded-[10px]" type="text" placeholder="Nom">
+  <form id="formulaireContact" class="flex flex-col gap-6 items-center">
+    <div id="ligne1contact" class="flex flex-col md:flex-row gap-6 w-full">
+      <input
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="Nom"
+      />
+      <input
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="Prénom"
+      />
+    </div>
 
+    <div id="ligne2contact" class="flex flex-col md:flex-row gap-6 w-full">
+      <input
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="E-mail"
+      /><input
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="Téléphone"
+      />
+    </div>
 
-    <p class="text-[20px] text-center text-slate-400">*Vos données ne seront utilisées qu'afin de vous répondre et ne seront nullement collectées ou distribuées pour d'autres usages.</p> 
+    <div id="ligne3contact" class="flex flex-col w-full gap-6">
+      <input
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="Nom de l'entreprise"
+      />
+      <textarea
+        class="text-[20px] border-[1px] border-black rounded-lg p-2 w-full "
+        type="text"
+        placeholder="Message"
+        row=7
+      ></textarea>
+    </div>
+
+    <p class="text-[20px] text-center text-slate-400 md:max-w-[40%]">
+      *Vos données ne seront utilisées qu'afin de vous répondre et ne seront
+      nullement collectées ou distribuées pour d'autres usages.
+    </p>
     <a class="text-white font-bold bg-black py-4 px-6 rounded-lg" href="/">
-        Envoyez le formulaire
-      </a>
+      Envoyez le formulaire
+    </a>
+  </form>
 </div>
