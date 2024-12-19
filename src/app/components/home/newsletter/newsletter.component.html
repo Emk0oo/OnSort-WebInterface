@@ -1,0 +1,51 @@
+<div id="newsletter" class="flex flex-col py-24 px-6 md:hidden">
+  <div
+    id="cardNewsletter"
+    class="flex flex-col items-start text-black p-6 rounded-[24px] bg-slate-300"
+  >
+    <h2 class="text-[32px] font-bold max-w-[70%]">Inscrivez-vous à notre newsletter</h2>
+    <p class="text-[24px] max-w-[80%]">Restez informer sur nos nouveaux événements !</p>
+    <div id="subscribe" class="flex flex-col gap-4 w-full">
+      <input
+        type="email"
+        placeholder="Email"
+        class="flex w-full text-[20px] py-2 px-4 mt-4 border-3 rounded-[10px]"
+      />
+      <button
+        class="flex w-full px-6 py-3 text-[16px] text-white bg-black uppercase rounded-[16px] text-center"
+      >
+        S'INSCRIRE
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div id="newsletter" class="flex w-fit justify-center mx-auto flex-col py-24 px-6">
+    <div
+      id="cardNewsletter"
+      class="flex flex-col items-start text-black p-6 rounded-[24px] relative py-12"
+    >
+      <!-- Div absolute avec z-index inférieur -->
+      <div class="absolute-back bg-slate-300 w-full h-full absolute rounded-[16px] ml-[-12.5rem] inset-0 transform -translate-x-1/2 left-1/2 z-0"></div>
+  
+      <!-- Contenu avec z-index supérieur -->
+      <h2 class="text-[32px] font-bold max-w-[100%] z-10 relative">Inscrivez-vous à notre newsletter</h2>
+      <p class="text-[24px] max-w-[100%] mb-8 z-10 relative">Restez informer sur nos nouveaux événements !</p>
+      <div id="subscribe" class="flex flex-col gap-4 w-full z-10 relative">
+        <div class="input-container bg-white flex justify-between items-center border-2 border-black p-2 rounded-[16px]">
+          <input
+            type="email"
+            placeholder="Email"
+            class="flex w-fit text-[20px] py-2 px-4 border-3 rounded-[10px]"
+          />
+          <button
+            class="flex w-fit px-6 py-3 text-[16px] text-white bg-black uppercase rounded-[16px] text-center"
+          >
+            S'INSCRIRE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
