@@ -1,10 +1,10 @@
-<div class="w-full max-w-2xl mx-auto gap-8 py-24 px-6">
+<div class="w-full max-w-2xl mx-auto gap-8 py-24 px-6 md:mx-auto md:flex md:flex-col md:items-center md:px-32 md:max-w-full">
     <h2 
       class="text-[32px] font-bold text-center mb-8 leading-tight sm:leading-normal break-words"
     >
       Questions fréquentes
     </h2>
-    <div *ngFor="let faq of faqs; let i = index" class="gap-8">
+    <div *ngFor="let faq of faqs; let i = index" class="w-full md:w-[80%]">
       <button 
         class="w-full flex justify-between items-center py-4 px-6 text-left focus:outline-none"
         (click)="toggleFaq(i)"
